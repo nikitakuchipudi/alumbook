@@ -1,0 +1,58 @@
+body {
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative; 
+  background: #006992
+}
+
+.menu {
+   background: #ECA400 url('https://imagizer.imageshack.us/v2/955x955q90/537/VZeTgn.png') repeat left top; /* This pattern is downloaded from www.subtlepatterns.com */
+  left: -285px;
+  height: 100%;
+  position: fixed;
+  width: 285px;
+}
+
+.menu ul {
+  list-style: none;
+  border-top: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid black;
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-top: 3px;
+  font-family: 'Lato';
+}
+
+.menu a {
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.icon-menu {
+  cursor: pointer;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+.opac {
+  opacity: .75;
+}
