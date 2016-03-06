@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    text-shadow: 2px 2px red;
+}
+
+div.shadow {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.main {
+	color: white;  
+	font-size: 100px;
+}
+
+ul {
+    padding: 0;
+	overflow: auto;
+	list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+li a {
+	color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+	border-radius: 4px 4px 0 0;
+}
+
+table, th, td {
+    border: 10px solid blue;
+    
+}	
+</style>
+</head>
+<body>
+<h1 style = "color: white; background-color:#faebd7; font-size: 100px;"> 
+AlumBook 
+
+<ul style = "font-size: 30px; display: inline;">
+	
+	<li><a href = "alumni.jsp">Alumnis</a></li>
+	<li><a href = "#students">Students</a></li>
+	<li><a href = "#account">Account</a></li>
+	<li><a href = "#chat">Chat</a></li>
+
+</ul>
+
+</h1>
+<center style = "background-color:#ffdb99; font-size: 50px;">
+Sign In
+<br><br>
+<form style = "font-size: 30px;"; action="LoginServlet" method="post";>
+  Username:<br>
+  <input type="text" name="user">
+  <br>
+  Password:<br>
+  <input type="password" name="pwd"><br>
+  <input type="submit" value="Submit" name="Submit">
+  
+</form>
+<br>
+<hr size = 10 style = "background-color: white;">
+Register
+<br><br>
+<form style = "font-size: 30px;"; action="LoginServlet" method="post";>
+  Username:<br>
+  <input type="text" name="userr">
+  <br>
+  Password:<br>
+  <input type="password" name="pwdr">
+  <br>
+  First Name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last Name:<br>
+  <input type="text" name="lastname">
+  <br>
+  School:<br>
+  <input type="text" name="school">
+  <br>
+  Graduation Year:<br>
+  <input type="text" name="gradYear">
+  <br>
+  <input type="checkbox" name="alumni" /> Alumni?
+  <input type="submit" value="Register">
+  
+</form>
+<br>
+</center>
+<body>
+<html>
