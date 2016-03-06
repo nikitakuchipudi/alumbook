@@ -1,56 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-h1 {
-    text-shadow: 2px 2px red;
-}
 
-div.shadow {
-  width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-}
 
-div.main {
-	color: white;  
-	font-size: 100px;
-}
-
-ul {
-    padding: 0;
-	overflow: auto;
-	list-style-type: none;
-}
-
-li {
-    display: inline;
-}
-
-li a:hover {
-    background-color: black;
-}
-
-li a {
-	color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-	border-radius: 4px 4px 0 0;
-}
-
-table, th, td {
-    border: 10px solid blue;
-    
-}	
-</style>
+<link rel="stylesheet" type="text/css" href="css/project1CSS.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<h1 style = "color: white; background-color:#faebd7; font-size: 100px;"> 
-AlumBook 
+<div class="title">Alumbook</div>
 
-<ul style = "font-size: 30px; display: inline;">
+<ul id="nav">
 	
-	<li><a href = "alumni.jsp">Alumnis</a></li>
+	<li><a href = "alumni.jsp">Alumni</a></li>
 	<li><a href = "#students">Students</a></li>
 	<li><a href = "#account">Account</a></li>
 	<li><a href = "#chat">Chat</a></li>
@@ -58,22 +19,30 @@ AlumBook
 </ul>
 
 </h1>
-<center style = "background-color:#ffdb99; font-size: 50px;">
-Sign In
-<br><br>
-<form style = "font-size: 30px;"; action="LoginServlet" method="post";>
-  Username:<br>
-  <input type="text" name="user">
-  <br>
-  Password:<br>
-  <input type="password" name="pwd"><br>
-  <input type="submit" value="Submit" name="Submit">
-  
-</form>
+<center style = "font-size: 35px;">
+<div style="background-color:#eca400; float: left; border-radius: 20px; padding: 10px; margin-left: 500px;
+margin-top: 27px;
+">
+<i>Sign In</i>
+</div>
 <br>
-<hr size = 10 style = "background-color: white;">
-Register
+
+<div style="background-color: white; width: 300px; border-radius: 20px; padding-bottom: 10px; padding-top: 20px; margin-top: 27px;" >
+	<form style = "font-size: 20px;"; action="LoginServlet" method="post";>
+	  Username:<br>
+	  <input type="text" name="user">
+	  <br>
+	  Password:<br>
+	  <input type="password" name="pwd"><br>
+	  <input type="submit" value="Submit" name="Go!">
+	  
+	</form>
+</div>
+<div style="background-color:#eca400; float: left; border-radius: 20px; padding: 10px; margin-left: 500px;
+margin-top: 70px;
+">Register</div>
 <br><br>
+<div style="background-color: white; width: 300px; border-radius: 20px; padding-bottom: 10px; padding-top: 20px; margin-top: 27px;" >
 <form style = "font-size: 30px;"; action="LoginServlet" method="post";>
   Username:<br>
   <input type="text" name="userr">
@@ -94,9 +63,11 @@ Register
   <input type="text" name="gradYear">
   <br>
   <input type="checkbox" name="alumni" /> Alumni?
+  <br>
   <input type="submit" value="Register">
   
 </form>
+</div>
 <br>
 </center>
 <body>
