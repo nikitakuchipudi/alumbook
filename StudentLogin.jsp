@@ -1,39 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=US-ASCII"
-    pageEncoding="US-ASCII"%>
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-h1 {
-    text-shadow: 2px 2px red;
-}
+<link rel="stylesheet" type="text/css" href="css/project1CSS.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
-ul {
-    padding: 0;
-}
-
-li {
-    display: inline;
-}
-
-li a:hover {
-    background-color: black;
-}
-
-li a {
-	color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-	border-radius: 4px 4px 0 0;
-}
-
-table, th, td {
-    border: 10px solid blue;
-    
-}		
-</style>
 </head>
 <body>
+
 <%
 String firstName = null;
 String lastName = null;
@@ -47,32 +20,35 @@ for(Cookie cookie : cookies){
 }
 if(firstName == null) response.sendRedirect("login.html");
 %>
-<h1 style = "color: white; background-color:#faebd7; font-size: 100px;"> 
-<ul style = "display: inline;">
- <li><a href = "change.log">AlumBook</a><li>
-</ul>
+<div class="title">Alumbook</div>
 
-<ul style = "font-size: 30px; display: inline;">
+<ul id="nav">
 	
-	<li><a href = "AlumPage.jsp">Alumnis</a></li>
+	<li><a href = "alumni.jsp">Alumni</a></li>
 	<li><a href = "#students">Students</a></li>
-	<li><a href = "account.html">Account</a></li>
+	<li><a href = "#account">Account</a></li>
 	<li><a href = "#chat">Chat</a></li>
 
 </ul>
 
-</h1>
+
 
 <p> 
-<center style = "background-color:#ffdb99; font-size: 50px;">
-Welcome <%=firstName %> <%=lastName %>
+<center>
+<div style="background-color:#eca400; float: left; border-radius: 20px; padding: 10px; margin-left: 500px;
+margin-top: 27px; font-size: 30px;
+">
+<i>Welcome <%=firstName %> <%=lastName %></i>
+</div>
 <br><br>
-<form style = "font-size: 30px;"; action="Browse" method="post";>
+<div style="background-color: white; width: 300px; border-radius: 20px; padding-bottom: 10px; padding-top: 20px; margin-top: 27px;">
+<form style = "font-size: 30px;">
   Search:
-  <input type="text" name="searchName">
+  <input type="text" name="search">
   <br>
   <input type="submit" value="Submit">
 </form>
+</div>
 <br>
 </center>
 </p>
